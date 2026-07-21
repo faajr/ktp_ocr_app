@@ -1,10 +1,6 @@
 """
-app.py
-------
 Aplikasi utama Streamlit: AI Document Classification & OCR untuk KTP Indonesia.
-Versi premium dengan tampilan modern, dark theme, dan glassmorphism.
-
-Alur aplikasi (sesuai flowchart):
+Alur aplikasi:
     1. Upload Image        → user mengunggah gambar dokumen
     2. AI Classification   → apakah gambar KTP atau bukan
     3. OCR Extraction      → baca isi KTP pakai AI Vision
@@ -12,9 +8,6 @@ Alur aplikasi (sesuai flowchart):
     5. Validation Rule     → validasi data berdasarkan aturan bisnis
     6A. Save Database      → data valid, simpan ke database
     6B. Tampilkan Error    → data tidak valid, tampilkan pesan error
-
-Cara menjalankan:
-    streamlit run app.py
 """
 
 import os
@@ -64,7 +57,7 @@ with st.sidebar:
             <div style="font-size: 1.1rem; font-weight: 700; letter-spacing: 0.5px;
                         background: linear-gradient(90deg, #00d2ff, #7b2ff7);
                         -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                KTP OCR Intelligence
+                🪪 KTP OCR Intelligence
             </div>
         </div>
         """,
