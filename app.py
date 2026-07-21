@@ -57,7 +57,7 @@ with st.sidebar:
             <div style="font-size: 1.1rem; font-weight: 700; letter-spacing: 0.5px;
                         background: linear-gradient(90deg, #00d2ff, #7b2ff7);
                         -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                🪪 KTP OCR Intelligence
+                KTP OCR Intelligence
             </div>
         </div>
         """,
@@ -330,7 +330,7 @@ elif halaman == "📤 Upload & Proses":
                     html_simpan = '<div class="glass-card animate-fade-in" style="animation-delay: 0.6s;">'
                     if status == "VALID":
                         database.save_record(
-                            ocr_data=hasil_ocr,
+                            _data=hasil_,
                             status_validasi=status,
                             detail_validasi=hasil_validasi["detail"],
                         )
