@@ -330,7 +330,7 @@ elif halaman == "📤 Upload & Proses":
                     html_simpan = '<div class="glass-card animate-fade-in" style="animation-delay: 0.6s;">'
                     if status == "VALID":
                         database.save_record(
-                            _data=hasil_,
+                            ocr_data=hasil_,
                             status_validasi=status,
                             detail_validasi=hasil_validasi["detail"],
                         )
