@@ -1,15 +1,3 @@
-"""
-Aplikasi utama Streamlit: AI Document Classification & OCR untuk KTP Indonesia.
-Alur aplikasi:
-    1. Upload Image        → user mengunggah gambar dokumen
-    2. AI Classification   → apakah gambar KTP atau bukan
-    3. OCR Extraction      → baca isi KTP pakai AI Vision
-    4. JSON Result         → hasil ekstraksi dalam format JSON
-    5. Validation Rule     → validasi data berdasarkan aturan bisnis
-    6A. Save Database      → data valid, simpan ke database
-    6B. Tampilkan Error    → data tidak valid, tampilkan pesan error
-"""
-
 import os
 import io
 import json
@@ -490,7 +478,7 @@ elif halaman == "🗂️ Riwayat Database":
                         st.markdown(ui_components.get_validation_table_html(val_json), unsafe_allow_html=True)
                     except (json.JSONDecodeError, TypeError):
                         st.info("Detail validasi tidak tersedia.")
-                        
+""""                      
             # Tambahkan tombol Hapus Data
             st.markdown("<div style='height: 1.5rem;'></div>", unsafe_allow_html=True)
             col_spacer, col_hapus = st.columns([3, 1])
@@ -499,9 +487,7 @@ elif halaman == "🗂️ Riwayat Database":
                     database.delete_record(pilihan_id)
                     st.success("Data berhasil dihapus!")
                     st.rerun()
-
-        # Tidak perlu st.markdown("</div>") karena detail record tidak dibungkus div secara utuh
-
+""""
         # Tombol export CSV
         st.markdown("<div style='height: 1rem;'></div>", unsafe_allow_html=True)
 
