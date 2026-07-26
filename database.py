@@ -1,17 +1,3 @@
-"""
-database.py
------------
-Modul ini bertugas menyimpan dan membaca data hasil OCR KTP dari database.
-
-Kita pakai SQLite karena:
-- Tidak perlu install database server terpisah
-- File database cukup 1 file (ktp_data.db) yang otomatis dibuat
-- Cocok untuk project belajar / skala kecil
-
-Semua fungsi di file ini murni tentang "menyimpan" dan "mengambil data",
-tidak ada logika AI atau validasi di sini (biar rapi, satu file satu tanggung jawab).
-"""
-
 import sqlite3
 import json
 from datetime import datetime
