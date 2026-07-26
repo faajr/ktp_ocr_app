@@ -1,20 +1,3 @@
-"""
-openrouter_client.py
----------------------
-Modul ini bertugas berkomunikasi dengan OpenRouter Vision API untuk 2 tugas:
-    1. classify_image()  -> menentukan apakah gambar adalah KTP atau bukan
-    2. extract_ocr()     -> membaca isi KTP dan mengembalikan data dalam JSON
-
-Kenapa pakai OpenRouter?
-    OpenRouter menyediakan 1 API yang bisa dipakai untuk banyak model AI
-    (termasuk model yang punya kemampuan "vision" / membaca gambar),
-    jadi kita tidak perlu daftar ke banyak provider berbeda.
-
-Catatan penting:
-    - Tidak ada Regex dipakai untuk membaca isi dokumen (sesuai instruksi project).
-    - Semua pembacaan teks dari gambar dilakukan oleh AI (model vision), bukan library OCR biasa.
-"""
-
 import base64
 import json
 import os
