@@ -478,16 +478,7 @@ elif halaman == "🗂️ Riwayat Database":
                         st.markdown(ui_components.get_validation_table_html(val_json), unsafe_allow_html=True)
                     except (json.JSONDecodeError, TypeError):
                         st.info("Detail validasi tidak tersedia.")
-""""                      
-            # Tambahkan tombol Hapus Data
-            st.markdown("<div style='height: 1.5rem;'></div>", unsafe_allow_html=True)
-            col_spacer, col_hapus = st.columns([3, 1])
-            with col_hapus:
-                if st.button("🗑️ Hapus Data Ini", type="secondary", use_container_width=True):
-                    database.delete_record(pilihan_id)
-                    st.success("Data berhasil dihapus!")
-                    st.rerun()
-""""
+
         # Tombol export CSV
         st.markdown("<div style='height: 1rem;'></div>", unsafe_allow_html=True)
 
