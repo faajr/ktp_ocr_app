@@ -2,10 +2,7 @@ import streamlit as st
 import textwrap
 
 def inject_custom_css():
-    """
-    Fungsi ini digunakan untuk menyuntikkan (inject) CSS kustom ke dalam aplikasi Streamlit.
-    CSS ini akan mengubah tampilan bawaan Streamlit menjadi lebih premium dan modern dengan efek glassmorphism.
-    """
+   
     css = textwrap.dedent("""\
     <style>
     /* Mengimpor font Inter dari Google Fonts untuk tampilan yang lebih modern */
