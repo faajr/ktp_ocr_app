@@ -1,20 +1,3 @@
-"""
-validation.py
---------------
-Modul ini berisi aturan bisnis (business rules) untuk memvalidasi hasil OCR KTP.
-
-PENTING: Validasi di sini murni logika Python biasa (bukan AI, bukan Regex untuk
-membaca teks dari gambar). Ini sesuai instruksi project: OCR pakai AI Vision,
-tapi validasi hasilnya pakai Python.
-
-Struktur NIK KTP Indonesia (16 digit):
-    - 2 digit pertama  -> kode provinsi
-    - 2 digit berikutnya -> kode kabupaten/kota
-    - 2 digit berikutnya -> kode kecamatan
-    - 6 digit berikutnya -> tanggal lahir (DDMMYY), khusus perempuan tanggal + 40
-    - 4 digit terakhir -> nomor urut
-"""
-
 from datetime import datetime
 
 
